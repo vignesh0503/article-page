@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/article page/css/style.css" />
+  </head>
+  <body>
+    <div id="sectionhome">
+      <div class="bg-color">
+        <h1 class="main-heading">Empower Yourself</h1>
+        <p class="main-paragraph">
+          By Learning new courses from worlds Leading Experts
+        </p>
+        <div class="d-flex flex-row text-center">
+          <div class="bg-card margin-card" onclick="display('sectiontech')">
+            <img
+              src="https://assets.ccbp.in/frontend/static-website/articles-technology-icon-img.png"
+              class="technology-image"
+            />
+            <p class="technology-paragraph">Technology</p>
+          </div>
+          <div class="bg-card margin-card" onclick="display('sectionscience')">
+            <img
+              src="/img/articles-science-icon-img.png"
+              class="technology-image"
+            />
+            <p class="technology-paragraph">Science</p>
+          </div>
+        </div>
+        <div class="d-flex flex-row text-center">
+          <div class="bg-card margin-card" onclick="display('sectionhealth')">
+            <img
+              src="/img/articles-healthcare-icon-img.png"
+              class="technology-image"
+            />
+            <p class="technology-paragraph">Health care</p>
+          </div>
+          <div class="bg-card margin-card" onclick="display('sectionbusiness')">
+            <img
+              src="/img/articles-business-icon-img.png"
+              class="technology-image"
+            />
+            <p class="technology-paragraph">Business</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sectiontech">
+      <div class="bg-color">
+        <div id="techCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="/img/articles-technology-c1-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/img/articles-business-c2-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/articles-technology-c3-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#techCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#techCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h1 class="list-topics">List of Topics</h1>
+        <ul class="unlist">
+          <li>Artificial Inteligence</li>
+          <li>Data Science</li>
+          <li>Machine learning</li>
+          <li>Internet of Things</li>
+          <li>Blockchain</li>
+          <li>Virtual Reality</li>
+        </ul>
+        <div class="text-center">
+          <button class="button-color" onclick="display('sectionhome')">
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="sectionscience">
+      <div class="bg-color">
+        <div
+          id="scienceCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="/img/articles-science-c1-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/img/articles-science-c2-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/articles-science-c3-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#scienceCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#scienceCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h1 class="list-topics">List of Topics</h1>
+        <ul class="unlist">
+          <li>Biology</li>
+          <li>Zoology</li>
+          <li>Cardiology</li>
+          <li>Chemistry</li>
+          <li>Bio Chemical</li>
+          <li>Neno science</li>
+        </ul>
+        <div class="text-center">
+          <button class="button-color" onclick="display('sectionhome')">
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionhealth">
+      <div class="bg-color">
+        <div id="healthCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="/img/articles-healthcare-c1-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/img/articles-healthcare-c2-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/articles-healthcare-c3-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#healthCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#healthCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h1 class="list-topics">List of Topics</h1>
+        <ul class="unlist">
+          <li>Infrastructure Management</li>
+          <li>Latest Health Care</li>
+          <li>COVID-19</li>
+        </ul>
+        <div class="text-center">
+          <button class="button-color" onclick="display('sectionhome')">
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionBusiness">
+      <div class="bg-color">
+        <div
+          id="businessCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="/img/articles-business-c1-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/img/articles-business-c2-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/articles-business-c3-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#businessCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#businessCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h1 class="list-topics">List of Topics</h1>
+        <ul class="unlist">
+          <li>Business Models</li>
+          <li>21st Century Business skill</li>
+          <li>Traditional Business Approaches</li>
+          <li>How to go from 0 to 1? The startup 101</li>
+        </ul>
+        <div class="text-center">
+          <button class="button-color" onclick="display('sectionhome')">
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
